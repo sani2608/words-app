@@ -6,15 +6,9 @@ import { Injectable } from '@angular/core';
 export class WordServiceService {
   constructor() {}
 
-  private wordList: string[] = [
-    'Boots',
-    'Clogs',
-    'Loafers',
-    'Moccasins',
-    'Sneakers',
-  ];
+  private wordList: string[] = ['sani', 'saurabh', 'vikram'];
 
-  public sizeOfList():number {
+  public sizeOfList(): number {
     return this.wordList.length;
   }
   public isWordPresentInList(word: string): boolean {

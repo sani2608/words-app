@@ -9,6 +9,9 @@ import { WordServiceService } from './word-service.service';
 export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.updateWordList();
+    // this.service.gethttpData().subscribe((data) => {
+    //   console.log(data);
+    // });
   }
   constructor(private service: WordServiceService) {}
   word = '';
